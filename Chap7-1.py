@@ -35,6 +35,8 @@ model.compile(
 
 model.fit([text, question], answer, epochs=10, batch_size=128)
 
-# model.fit({'text': text, 'question': question}, answer, epochs=10, batch_size=128)
+#  model.fit({'text': text, 'question': question}, answer, epochs=10, batch_size=128)
 
+#  ValueError:  When feeding symbolic tensors to a model, we expect the tensors to have
+#  a static batch size. Got tensor with shape: (None, 500)
 
